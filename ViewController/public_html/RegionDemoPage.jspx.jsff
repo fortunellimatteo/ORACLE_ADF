@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:h="http://java.sun.com/jsf/html">
+  <af:button text="go to details" id="b1" action="go"/>
+  <af:outputFormatted value="Hello to home page #{pageFlowScope.customerInTF}" id="of1"/>
+</jsp:root>

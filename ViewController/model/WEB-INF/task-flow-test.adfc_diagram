@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">RegionDemoPage</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">283.0</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>RegionDemoPage&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">272.89648</property>
+      <property
+         name="page">/RegionDemoPage.jspx.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <View
+      id="View3">
+      <property
+         name="activityId">DetailsDemoPage</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">618.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>DetailsDemoPage&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">275.94824</property>
+      <property
+         name="page">/DetailsDemoPage.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="View2"
+      to="View3">
+      <property
+         name="fromOutcome">go</property>
+      <property
+         name="sdm:polyPoints">R50,324.0,272.5459,575.66504,272.09766,L46</property>
+   </ControlFlowCase>
+   <ParentAction
+      id="ParentAction6">
+      <property
+         name="activityId">parentAction1</property>
+      <property
+         name="x">433.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>parentAction1&lt;/b>&lt;/p>&lt;p>Activity Type:  Parent Action&lt;/p></property>
+      <property
+         name="y">461.59766</property>
+      <property
+         name="exceptionHandler">false</property>
+   </ParentAction>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View3"
+      to="ParentAction6">
+      <property
+         name="fromOutcome">go to PA</property>
+      <property
+         name="sdm:polyPoints">L54,577.0,279.09766,433.0,407.24707,T50</property>
+   </ControlFlowCase>
+</SDM>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  ComponentClass="model.AppModuleImpl"
+  ClearCacheOnRollback="true"
+  DefClass="model.AppModuleDefImpl">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+    <Attr Name="_isDefCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="UserTableView1"
+    ViewObjectName="model.UserTableView"/>
+</AppModule>

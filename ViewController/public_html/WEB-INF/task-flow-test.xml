@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="task-flow-test">
+    <default-activity>RegionDemoPage</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__5">
+      <name>inputParameter1</name>
+      <value>#{pageFlowScope.customerInTF}</value>
+      <required/>
+    </input-parameter-definition>
+    <view id="RegionDemoPage">
+      <page>/RegionDemoPage.jspx.jsff</page>
+    </view>
+    <view id="DetailsDemoPage">
+      <page>/DetailsDemoPage.jsff</page>
+    </view>
+    <parent-action id="parentAction1">
+      <parent-outcome>go to EP</parent-outcome>
+    </parent-action>
+    <control-flow-rule id="__1">
+      <from-activity-id>RegionDemoPage</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>go</from-outcome>
+        <to-activity-id>DetailsDemoPage</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__3">
+      <from-activity-id>DetailsDemoPage</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>go to PA</from-outcome>
+        <to-activity-id>parentAction1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
